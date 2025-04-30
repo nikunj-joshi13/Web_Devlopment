@@ -1,0 +1,40 @@
+.ctr{
+    text-align: center;
+}
+
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.one{
+    margin: 30px;
+    padding: 20px;
+    
+}
+
+.one > img{
+    height: 350px;
+    width: 350px;
+}
+
+.one > p{
+    text-align: center;
+}
+
+.btn{
+    margin: auto; 
+    width: 52%;    
+}
+
+
+
+.btn > a{
+    background-color: rgba(5, 91, 149, 0.665);
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    size: 25px
+}

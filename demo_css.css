@@ -1,0 +1,43 @@
+one{
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.one > img{
+    height: 280px;
+    width: 320px;
+}
+    
+.one > p{
+    text-align: center;
+}
+
+.btn
+{
+    margin: 25px;
+}
+
+.btn > a{
+    background-color: rgba(46, 173, 212, 0.67);
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.cen{
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) 
+{
+    .main{
+        flex-wrap: wrap;
+    }    
+}

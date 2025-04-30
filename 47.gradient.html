@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            justify-content: center;
+        }
+
+        #gradient{
+            height: 400px;
+            width: 400px;
+            margin: 5px;
+        }
+        .lg{
+            background: linear-gradient(
+                to bottom,
+                            rgba(0, 0, 0, 0.4),
+                            rgba(45, 27, 16, 1) 50%,
+                            rgba(0, 0, 0, 0.4)
+                            ),
+            repeating-linear-gradient(
+                            to right,
+                            #2d1b10 0px,
+                            #3a2619 20px,
+                            #4e3725 40px,
+                            #2d1b10 60px);
+            }
+    
+        .rg{
+            background-image: radial-gradient(green,blue);
+        }
+        .cg{
+            background-image: conic-gradient(yellow,green);
+        }
+        @media screen and (max-width: 768px) 
+        {
+            .main{
+            flex-wrap: wrap;
+                 }    
+        }
+    </style>
+
+</head>
+<body>
+
+
+    <div class="main">
+        <div class="lg" id="gradient"><h1>linear-gradient</h1></div>
+        <div class="rg" id="gradient"><h1>radial-gradient</h1></div>
+        <div class="cg" id="gradient"><h1>conic-gradient</h1></div>
+    </div>
+</body>
+</html>

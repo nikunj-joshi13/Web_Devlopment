@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: red;
+            height: 50px;
+            width: 50px;
+            animation-name: boxer;
+            animation-duration: 5s;
+            /* animation-delay: 5s; */
+            position: relative;
+            /* transition: 0.5s; */
+            /* animation-timing-function: linear; */
+        }
+
+        @keyframes boxer{
+            0%{
+                background-color: red;
+                left:200px;
+                right: 200px;
+                /* animation-timing-function: linear; */
+            }
+            25%{
+                background-color: aqua;
+                top: 100px;
+                left: 200px;
+                /* animation-timing-function: linear; */
+
+            }
+            100%{
+                background-color: blueviolet;
+                top: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        1
+    </div>
+</body>
+</html>
