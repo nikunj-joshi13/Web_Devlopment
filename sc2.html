@@ -1,0 +1,259 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>index</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    .main {
+      background-color: #ffffff;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .im {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .im img {
+      height: 80px;
+      /* width: 50px; */
+      border-radius: 10px;
+      /* background-color: #06BBCC; */
+    }
+    .im h2 {
+      font-family: "Heebo", sans-serif;
+      color: #000;
+    }
+    .im h5 {
+      font-family: "Heebo", sans-serif;
+      color: #06BBCC;
+      font-weight: normal;
+      font-size: 0.9rem;
+      margin-left: 10px;
+      position: relative;
+      top: 4px;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+    nav a {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 10px;
+      border: 2px solid transparent;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #06BBCC;
+      border-color: #06BBCC;
+      background-color: #e6e6e6;
+    }
+    .join-now {
+      background-color: #06BBCC;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 600;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .join-now:hover {
+      background-color: #2d6f75;
+      color: white;
+    }
+    .content {
+      background-color: rgb(230, 126, 0);
+      width: 100%;
+      height: 500px;
+    }
+    .con {
+      background: rgba(255, 0, 0, 0.486);
+      height: 550px;
+    }
+    h2 {
+      font-family: "Heebo", sans-serif;
+      position: relative;
+      top: 20px;
+      right: 10px;
+    }
+    h5 {
+      font-family: "Heebo", sans-serif;
+      position: relative;
+      top: 50px;
+      right: 175px;
+      color: #06BBCC;
+    }
+    .list {
+      gap: 20px;
+      float: right;
+    }
+    ol {
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
+      position: absolute;
+      right: 250px;
+      top: 30px;
+    }
+    li {
+      line-height: 1.5;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      transition: 0.5s;
+      border: 2px solid black;
+      padding: 1px;
+      border-radius: 10px;
+    }
+    li:hover {
+      color: #06BBCC;
+      position: relative;
+      bottom: 2px;
+    }
+    .join {
+      border: 1px solid #06bbcc;
+      height: 60px;
+      width: 200px;
+      position: relative;
+      top: 10px;
+      left: 670px;
+      background-color: #06bbcc;
+    }
+    button {
+      width: 100%;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 600;
+      transition: 0.5s;
+      text-align: center;
+      position: relative;
+      color: rgb(0, 0, 0);
+      height: 60px;
+      background-color: #06BBCC;
+    }
+    button:hover {
+      background-color: #2d6f75;
+      transition: 0.5s;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    img {
+      height: 500px;
+      width: 100%;
+    }
+    .sub {
+      display: flex;
+      margin-top: 30px;
+      height: 200px;
+      gap: 20px;
+      justify-content: center;
+    }
+    .box1 {
+      background-color: white;
+      width: 250px;
+      transition: 0.9s;
+      padding: 15px;
+      border-radius: 30px;
+    }
+    .box2 {
+      background-color: white;
+      width: 250px;
+      padding: 15px;
+      border-radius: 30px;
+    }
+    .box3 {
+      background-color: white;
+      width: 250px;
+      padding: 15px;
+      border-radius: 30px;
+    }
+    .box4 {
+      background-color: white;
+      width: 250px;
+      padding: 15px;
+      border-radius: 30px;
+    }
+    .cer {
+      font-size: 25px;
+      font-weight: 600;
+      text-align: center;
+      position: relative;
+      top: 40px;
+    }
+    p {
+      text-align: justify;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      position: relative;
+      top: 40px;
+    }
+    .box1:hover,
+    .box2:hover,
+    .box3:hover,
+    .box4:hover {
+      background-color: #06BBCC;
+      transition: 0.9s;
+      position: relative;
+      bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="im">
+      <!-- <a href="/new-logo." target="_blank"> -->
+        <img src="/new-logo.png">
+      </a>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Courses</a>
+      <a href="#">Contact</a>
+      <a href="https://api.whatsapp.com/send/?phone=%2B918866487343&text&type=phone_number&app_absent=0" class="join-now" target="_blank" rel="noopener noreferrer">Join Now</a>
+    </nav>
+  </div>
+
+  <div class="content">
+    <div class="bg">
+      <img src="/kumputtar.jpg" alt="" />
+    </div>
+  </div>
+
+  <div class="sub">
+    <div class="box1">
+      <p class="cer">Certified Courses</p>
+      <p>We Provide Govt. certificate for all courses which is valid for any type of job.</p>
+    </div>
+    <div class="box2">
+      <p class="cer">Expert Faculties</p>
+      <p>We have subject vise expert faculties for different type of courses.</p>
+    </div>
+    <div class="box3">
+      <p class="cer">Best Facilities</p>
+      <p>we are provide matirial which is prepare from our huge experience and extra practice time.</p>
+    </div>
+    <div class="box4">
+      <p class="cer">Computer Lab</p>
+      <p>In our institute we have high configure PC with latest software and air conditioner lab.</p>
+    </div>
+  </div>
+</body>
+</html>
